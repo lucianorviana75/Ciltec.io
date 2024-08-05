@@ -1,0 +1,70 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    
+    {% block 'head' %}
+        <link rel="stylesheet" href="{% static 'cliente/css/area.css' %}">
+        <link rel="stylesheet" href="{% static ''%}"> 
+    {% endblock %}
+
+    <body>
+        {% block  dashboard %}
+        <header class="a_area">
+
+            <div class="b_area">
+                <div class="logo-name">CILTEC</div>
+                <i class="bx-menu" id="btn"></i>
+            </div>
+            <div class="breadcrumb">
+                <div class="container">
+                    <a href="{% url 'cliente'%}">Home</a>
+                    <span>&raquo;</span>
+                    <a href="{% url 'area_clientes'%}">Clientes/</a>
+                    <a href="{% url 'area_servicos'%}">Serviços</a>
+                </div>
+	        </div>
+	
+
+            <ul class="nav-list" >
+                <li>
+                    <a href="{% url 'area_clientes'%}">  
+                        <span class="links_name">Clientes</span>
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a href="{% url 'area_servicos'%}">  
+                         <span class="links_name">Serviços</span>
+                    </a>
+                   
+                </li>
+            </ul>
+ 
+        </header>
+        <main>
+            <section class="home-section">
+                {% block 'dashboard'%}
+                {% endblock %}
+            </section>
+        </main>
+
+    </body>
+    
+       
+    
+    {% endblock dashboard %}
+    
+</html>
+
+         

@@ -1,0 +1,51 @@
+
+
+main{
+    border: black 1px solid;
+    font-size: 20px;
+    text-align: center;
+    background-color: blueviolet;
+    padding: 5px;
+    
+}
+.text-card{
+    
+    font-size: 25px;
+    color: blue;
+    height: 0px;/*faixa envolta do nome Clientes*/
+    background-color: rgb(233, 185, 29);
+
+    
+}
+.card-dashboard{
+    
+    background-color: var(--main-color);
+    width: 60%;
+    margin-left: 210px;
+    margin-top: 20px;
+    padding: 20px;
+    top: 30%;
+   
+}
+.row{
+    display:flex;
+    background-color: aquamarine;
+    
+   
+}
+.f_cliente{
+    display: block;
+    color: brown;
+}
+p{
+    color: brown;
+}
+.f_booton{
+   margin-top: 10px;
+    
+}
+@media screen and (max-width: 768px){
+    
+
+}
+    
